@@ -38,12 +38,10 @@ namespace WindowsFormsApp1
             this.scoreLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.playAgain = new System.Windows.Forms.Button();
-            this.moon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grounds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bird)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moon)).BeginInit();
             this.SuspendLayout();
             // 
             // pipeTop
@@ -117,23 +115,12 @@ namespace WindowsFormsApp1
             this.playAgain.Visible = false;
             this.playAgain.Click += new System.EventHandler(this.playAgain_Click);
             // 
-            // moon
-            // 
-            this.moon.Image = global::WindowsFormsApp1.Properties.Resources.moon;
-            this.moon.Location = new System.Drawing.Point(313, 12);
-            this.moon.Name = "moon";
-            this.moon.Size = new System.Drawing.Size(100, 50);
-            this.moon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.moon.TabIndex = 7;
-            this.moon.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(425, 567);
-            this.Controls.Add(this.moon);
             this.Controls.Add(this.playAgain);
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.bird);
@@ -148,7 +135,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grounds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bird)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +149,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button playAgain;
-        private System.Windows.Forms.PictureBox moon;
     }
 }
 
